@@ -4,7 +4,7 @@
     width: 100%;
     padding: 30px;
 
-    background: linear-gradient(0deg, #fff, #845EF7);
+    background: linear-gradient(0deg, #D0BFFF, #5F3DC4);
 }
 
 #header {
@@ -38,10 +38,44 @@
 
 #videoBackground {
     z-index: 2;
+    position: relative;
+    height: 100%;
     padding: 10px;
     border-radius: 10px;
     background: rgba( 255, 255, 255, 0.4 );
     box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.37 );
     backdrop-filter: blur( 10.5px );
     -webkit-backdrop-filter: blur( 10.5px );
+}
+
+#video {
+    border-radius: 20px;
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+}
+
+#textBlock {
+    position: absolute;
+    color: #fff;
+    top: 0px;
+    z-index: -2;
+    height: 100%;
+    padding: 2vw 0px 2vw 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.textBlockTitle {
+    font-size: calc(20px + 1vw);
+}
+
+.textBlockSubTitle {
+    font-size: calc(15px + 0.6vw);
 }
